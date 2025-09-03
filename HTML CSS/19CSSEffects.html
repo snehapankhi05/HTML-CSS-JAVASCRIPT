@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML CSS Effects</title>
+    <style>
+        /* 1. Link colors */
+        a:link {
+            color: blue; /* before visited */
+        }
+        a:visited {
+            color: red; /* after visited */
+        }
+
+        /* 2. Table styling */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: lightblue; /* odd rows */
+        }
+        tr:nth-child(even) {
+            background-color: lightgreen; /* even rows */
+        }
+
+        /* 3. Text styling */
+        .green-uppercase {
+            color: green;
+            text-transform: uppercase; /* convert text to uppercase */
+        }
+        a {
+            font-size: 20px;   /* link bada */
+            font-weight: bold; /* mota text */
+            text-decoration: none; /* underline hatao */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Links -->
+    <h2 class="green-uppercase">Link Example</h2>
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <br><br>
+
+    <!-- 2. Table -->
+    <h2 class="green-uppercase">Table Example</h2>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Faculty</th>
+        </tr>
+        <tr>
+            <td>Web App Development (3154205)</td>
+            <td>Prof. Juhi Srivastava</td>
+        </tr>
+        <tr>
+            <td>New LJ Institute of Engineering</td>
+            <td>Semester: V</td>
+        </tr>
+    </table>
+
+    <!-- 3. Text -->
+    <h2 class="green-uppercase">This is green uppercase text</h2>
+
+</body>
+</html>

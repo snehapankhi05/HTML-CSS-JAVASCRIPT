@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Layout Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            background-color: lightblue;
+            height: 80px;
+        }
+        .menu {
+            background-color: lightgreen;
+            width: 20%;
+        }
+        .content {
+            background-color: lightyellow;
+            width: 60%;
+        }
+        .sidebar {
+            background-color: lightpink;
+            width: 20%;
+        }
+        .footer {
+            background-color: lightgray;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Header Row -->
+        <tr>
+            <td colspan="3" class="header">Header (Website Title / Logo)</td>
+        </tr>
+
+        <!-- Main Content Row -->
+        <tr>
+            <td class="menu">Menu <br> (Links / Navigation)</td>
+            <td class="content">Main Content <br> (Articles / Info)</td>
+            <td class="sidebar">Sidebar <br> (Ads / Extra Info)</td>
+        </tr>
+
+        <!-- Footer Row -->
+        <tr>
+            <td colspan="3" class="footer">Footer (Contact Info / Copyright)</td>
+        </tr>
+    </table>
+
+</body>
+</html>

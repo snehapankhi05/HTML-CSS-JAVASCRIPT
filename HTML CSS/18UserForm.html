@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .form-group
+        {
+            margin-bottom: 15px;
+        }
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right,white, rgb(44, 141, 193));
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        form
+        {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px black;
+            width: 90%;
+            max-width: 400px;
+
+        }
+
+        form h2
+        {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /*label*/
+        label
+        {
+            display: inline-flex;
+            margin-bottom: 4px;
+            margin-right: 0;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /*Inputs,selects*/
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1.5px solid black;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+            
+        }
+
+        /*Focus effect on inputs*/
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus
+        {
+            border-color: #4a90e2;
+            outline: none;
+            
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"]
+        {
+            margin-right: 15px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .form-group label.inline
+        {
+            display: inline-block;
+            margin-right: 15px;
+            color: #444;
+            cursor: pointer;
+        }
+
+        /*submit button*/
+        input[type="submit"]
+        {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a90e2;
+            border-radius: 8px;
+            color:white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+
+        input[type="submit"]:hover
+        {
+            background-color: #357ABD;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="submit.php" method="post">
+    <h2>Registration form</h2>
+
+    <div class="form-group">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required/>
+        <br><br>
+    </div>
+
+
+    <div class="form-group">
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required/>
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="password">password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        <br><br>
+    </div>
+
+     <div class="form-group">
+        <label for="confirm-password">confirm password</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required/>
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="Gender">Gender</label><br>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other"/>
+        <label for="other">Others</label>
+
+    </div>
+    <br><br>
+
+    <div class="form-group">
+        <label >Hobbies</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="hobbies" />
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="travelling" name="travelling" value="travelling"/>
+        <label for="travelling">Travelling</label>
+
+        <input type="checkbox" id="coding" name="coding" value="coding" />
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="music" name="music" value="music" />
+        <label for="music">Music</label>
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required/>
+        <br><br>
+    </div>
+
+     <div class="form-group">
+        <label for="country">Country</label><br>
+        <select id="country" name="country"  required>
+        <option value="india">India</option>
+        <option value="usa">Usa</option>
+        <option value="canada">Canada</option>
+        <option value="china">China</option>
+        </select>
+        <br><br>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Register">
+
+    </div>
+
+
+    </form>
+
+</body>
+</html>
